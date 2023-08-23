@@ -63,7 +63,7 @@ else {
 }
     function send_message($chat_id,$message_id, $message){
         $text = urlencode($message);
-        $apiToken = $_ENV['API_TOKEN'];  
+        $apiToken = $_ENV['s1UwoOUn7h54ZLuXRWlQnTjg9btkKAQp'];  
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&reply_to_message_id=$message_id&text=$text&parse_mode=Markdown");
     }
 ?>
